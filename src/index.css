@@ -164,7 +164,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.7em;
+  width: 3.15em;
   height: 0.92em;
   overflow: hidden;
   border-radius: 0.08em;
@@ -179,9 +179,10 @@ a {
   align-items: center;
   justify-content: center;
   margin: 0;
-  font-size: 0.42em;
+  padding: 0 0.08em;
+  font-size: 0.36em;
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   line-height: 1;
   text-transform: uppercase;
 }

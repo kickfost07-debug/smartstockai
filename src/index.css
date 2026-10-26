@@ -140,16 +140,24 @@ a {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.16em;
+  gap: 0.12em;
   font-size: clamp(36px, 7.2vw, 96px);
-  line-height: 0.9;
   font-weight: 600;
   letter-spacing: -0.045em;
   text-transform: uppercase;
 }
 
 .land h1 > span {
-  display: block;
+  display: flex;
+  line-height: 0.82;
+}
+
+.land h1 > span:first-child {
+  align-items: flex-end;
+}
+
+.land h1 > span:last-child {
+  align-items: flex-start;
 }
 
 .land-row {
@@ -162,8 +170,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3.55em;
-  height: 1.12em;
+  width: 3.85em;
+  height: 1.28em;
   overflow: hidden;
   border-radius: 0.1em;
   background: var(--ink);
@@ -177,10 +185,10 @@ a {
   align-items: center;
   justify-content: center;
   margin: 0;
-  padding: 0 0.1em;
-  font-size: 0.4em;
+  padding: 0 0.08em;
+  font-size: 0.48em;
   font-weight: 600;
-  letter-spacing: 0.01em;
+  letter-spacing: 0;
   line-height: 1;
   text-transform: uppercase;
 }

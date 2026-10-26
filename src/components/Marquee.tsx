@@ -1,18 +1,28 @@
 import { copy } from "../copy"
 
 export function Marquee() {
-  const row = [...copy.ticker, ...copy.ticker]
+  const row = copy.ticker
 
   return (
     <div className="ticker-wrap">
       <div className="ticker">
         <div className="ticker-track">
-          {row.map((item, i) => (
-            <span key={`${item}-${i}`}>
-              {item}
-              <em>★</em>
-            </span>
-          ))}
+          <div className="ticker-row">
+            {row.map((item) => (
+              <span key={`a-${item}`}>
+                {item}
+                <em>★</em>
+              </span>
+            ))}
+          </div>
+          <div className="ticker-row" aria-hidden>
+            {row.map((item) => (
+              <span key={`b-${item}`}>
+                {item}
+                <em>★</em>
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </div>

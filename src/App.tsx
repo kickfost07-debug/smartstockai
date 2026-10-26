@@ -147,10 +147,10 @@ export default function App() {
 
       <section className="approach">
         <motion.article className="ap-card ap-green" {...view}>
-          <div>
+          <header className="ap-head">
             <p>{copy.approach.kicker}</p>
             <a href="https://t.me/Egregoru">{copy.approach.cta}</a>
-          </div>
+          </header>
           <p className="ap-copy">{copy.approach.text}</p>
         </motion.article>
         <motion.article

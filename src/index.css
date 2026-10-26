@@ -310,6 +310,9 @@ a {
 }
 
 .ap-green {
+  justify-content: flex-start;
+  gap: clamp(22px, 3.2vw, 40px);
+  padding: clamp(22px, 3vw, 36px);
   background: var(--sea);
   color: var(--accent);
 }
@@ -318,21 +321,38 @@ a {
   margin: 0;
 }
 
+.ap-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.ap-head p {
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  line-height: 1;
+}
+
 .ap-green a {
   display: inline-flex;
-  margin-top: 16px;
+  align-items: center;
+  margin-top: 0;
   border: 1px solid currentColor;
   border-radius: 999px;
   padding: 8px 16px;
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  flex-shrink: 0;
 }
 
 .ap-copy {
-  font-size: clamp(16px, 1.8vw, 22px);
-  line-height: 1.4;
-  max-width: 32ch;
+  font-size: clamp(18px, 2.1vw, 26px);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.32;
+  max-width: 22em;
 }
 
 .ap-dark {
@@ -575,6 +595,14 @@ a {
 
   .ap-card {
     min-height: 280px;
+  }
+
+  .ap-green {
+    min-height: 0;
+  }
+
+  .ap-copy {
+    max-width: none;
   }
 
   .about h2 {

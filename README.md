@@ -8,4 +8,4 @@ npm run dev
 npm run build
 ```
 
-Сборка для хостинга: папка `dist`. Cloudflare Pages: команда `npm run build`, выход `dist`.
+Сборка для хостинга: папка `dist`. Cloudflare: команда `npm run build`, выход `dist` (`wrangler.jsonc`).

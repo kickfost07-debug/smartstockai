@@ -493,14 +493,13 @@ a {
 
 .ready h2 {
   margin: 0;
-  font-size: clamp(32px, 6.4vw, 72px);
-  line-height: 0.95;
+  max-width: 11em;
+  font-size: clamp(28px, 5.4vw, 64px);
+  line-height: 1.08;
   text-transform: uppercase;
-  letter-spacing: -0.05em;
-}
-
-.ready h2 span {
-  display: block;
+  letter-spacing: -0.04em;
+  text-align: center;
+  text-wrap: balance;
 }
 
 .ready p {

@@ -203,10 +203,7 @@ export default function App() {
       </section>
 
       <section className="ready">
-        <motion.h2 {...view}>
-          <span>{copy.ready.l1}</span>
-          <span>{copy.ready.l2}</span>
-        </motion.h2>
+        <motion.h2 {...view}>{copy.ready.title}</motion.h2>
         <motion.p {...view} transition={{ ...view.transition, delay: 0.06 }}>
           {copy.ready.lead}
         </motion.p>

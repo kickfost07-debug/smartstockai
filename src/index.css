@@ -224,7 +224,7 @@ a {
 
 .ticker-wrap {
   overflow: hidden;
-  padding: 8px 0 var(--section);
+  padding: 8px 0 12px;
 }
 
 .ticker {
@@ -270,7 +270,7 @@ a {
 }
 
 .about {
-  padding-top: var(--section);
+  padding-top: clamp(24px, 3.5vw, 40px);
   padding-bottom: var(--section);
 }
 

@@ -129,7 +129,7 @@ a {
 .land {
   min-height: calc(100svh - var(--nav));
   padding-top: clamp(32px, 6vh, 72px);
-  padding-bottom: var(--section);
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -224,7 +224,7 @@ a {
 
 .ticker-wrap {
   overflow: hidden;
-  padding: 8px 0 12px;
+  padding: clamp(36px, 5vw, 56px) 0;
 }
 
 .ticker {

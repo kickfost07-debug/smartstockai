@@ -5,7 +5,6 @@ import { copy } from "../copy"
 const ease = [0.76, 0, 0.24, 1] as const
 const IDLE = 5000
 const AFTER_LOAD = 2400
-const KEY = "ssa-idle-shown"
 
 export function Idle() {
   const [on, setOn] = useState(false)
@@ -13,14 +12,13 @@ export function Idle() {
 
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return
-    if (localStorage.getItem(KEY)) return
 
     let idle = 0
     let ready = false
 
     const arm = () => {
       window.clearTimeout(idle)
-      if (!ready || busy.current || localStorage.getItem(KEY)) return
+      if (!ready || busy.current) return
       idle = window.setTimeout(() => {
         busy.current = true
         setOn(true)
@@ -60,7 +58,6 @@ export function Idle() {
             ease,
           }}
           onAnimationComplete={() => {
-            localStorage.setItem(KEY, "1")
             setOn(false)
           }}
         >

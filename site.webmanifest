@@ -1,0 +1,27 @@
+{
+  "name": "SmartStockAI",
+  "short_name": "SmartStockAI",
+  "description": "Боты, CRM, сайты, аналитика и ИИ под ваш бизнес.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#212121",
+  "theme_color": "#212121",
+  "lang": "ru",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}
